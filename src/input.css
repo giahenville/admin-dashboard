@@ -28,10 +28,6 @@ body{
     grid-area: header;
 }
 
-.main-content{
-    grid-area: main-content;
-}
-
 
 /* <-------------- sidebar styles --------------> */
 
@@ -113,4 +109,36 @@ li:hover{
     padding: 5px 15px;
     border-radius: 15px;
     box-shadow: 2px 2px 2px #4d4c4c;
+}
+
+
+
+/* <-------------- Main styles --------------> */
+
+.content-container{
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-area:  
+    'projects'
+    'announcements'
+    'trending';
+
+    grid-template-areas:  
+    'projects announcements'
+    'projects trending';
+}
+
+.main-content{
+    grid-area: main-content;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-area: projects;
+}
+
+.announcements{
+    grid-area: announcements;
+}
+
+.trending{
+    grid-area: trending;
 }
