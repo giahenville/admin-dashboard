@@ -683,6 +683,16 @@ video {
   color: rgb(255 254 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 body{
   font-family:Arial, Helvetica, sans-serif;
   background-color: rgb(227, 232, 239);
