@@ -135,6 +135,17 @@ li:hover{
     color: #000300;
 }
 
+@media (max-width: 60em){
+    .content-container{
+        grid-template-columns: 1fr;
+        grid-template-areas:
+        'title-2'
+        'side-content'
+        'title-1'
+        'projects';
+    }
+}
+
 .title-1{
     grid-area: title-1;  
 }
