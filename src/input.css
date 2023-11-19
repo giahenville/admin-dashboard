@@ -91,7 +91,6 @@ li:hover{
     justify-content: space-between;
     grid-column: 1 / 3;
     margin-right: 2rem;
-
 }
 
 .hello-container > div{
@@ -114,12 +113,13 @@ li:hover{
 
 
 
-/* <-------------- Main styles --------------> */
+/* <-------------- Main body styles --------------> */
 
 .content-container{
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 0.5rem;
+    margin-bottom: 10px;
     grid-area:  
     'projects'
     'side-content'
@@ -135,6 +135,7 @@ li:hover{
     color: #000300;
 }
 
+/* makes announcements and trending responsive */
 @media (max-width: 60em){
     .content-container{
         grid-template-columns: 1fr;
@@ -156,6 +157,7 @@ li:hover{
 
 .title-3{
     grid-area: title-3;
+    margin-top: 25px;
 }
 
 .main-content{
@@ -167,11 +169,15 @@ li:hover{
     gap: 2rem;
 }
 
-
 div .announcements{
     grid-area: announcements;
     border-radius: 1rem;
     box-shadow: 2px 2px 5px #7f7d7d;
+}
+
+.trending{
+    padding: 1rem;
+    margin-top: 10px;
 }
 
 div .trending{
@@ -191,7 +197,6 @@ div .trending{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    
 }
 
 h3 {
@@ -214,4 +219,8 @@ h3 {
 .title-1,
 .title-2{
     margin-bottom: 0;
+}
+
+.trending-profile{
+    display: flex;
 }

@@ -678,6 +678,16 @@ video {
   color: rgb(255 254 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 body{
   font-family:Arial, Helvetica, sans-serif;
   background-color: rgb(227, 232, 239);
@@ -788,12 +798,13 @@ li:hover{
   box-shadow: 2px 2px 2px #4d4c4c;
 }
 
-/* <-------------- Main styles --------------> */
+/* <-------------- Main body styles --------------> */
 
 .content-container{
   display: grid;
   grid-template-columns: 2fr 1fr;
   gap: 0.5rem;
+  margin-bottom: 10px;
   grid-area:  
     'projects'
     'side-content'
@@ -806,6 +817,8 @@ li:hover{
     'projects side-content';
   color: #000300;
 }
+
+/* makes announcements and trending responsive */
 
 @media (max-width: 60em){
   .content-container{
@@ -828,6 +841,7 @@ li:hover{
 
 .title-3{
   grid-area: title-3;
+  margin-top: 25px;
 }
 
 .main-content{
@@ -843,6 +857,11 @@ div .announcements{
   grid-area: announcements;
   border-radius: 1rem;
   box-shadow: 2px 2px 5px #7f7d7d;
+}
+
+.trending{
+  padding: 1rem;
+  margin-top: 10px;
 }
 
 div .trending{
@@ -882,4 +901,8 @@ h3 {
 .title-1,
 .title-2{
   margin-bottom: 0;
+}
+
+.trending-profile{
+  display: flex;
 }
