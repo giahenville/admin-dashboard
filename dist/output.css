@@ -549,21 +549,19 @@ video {
   margin-right: 1.25rem;
 }
 
+.mx-8 {
+  margin-left: 2rem;
+  margin-right: 2rem;
+}
+
 .my-2 {
   margin-top: 0.5rem;
   margin-bottom: 0.5rem;
 }
 
-.mr-4 {
-  margin-right: 1rem;
-}
-
-.mt-10 {
-  margin-top: 2.5rem;
-}
-
-.mb-1 {
-  margin-bottom: 0.25rem;
+.my-5 {
+  margin-top: 1.25rem;
+  margin-bottom: 1.25rem;
 }
 
 .mb-0 {
@@ -572,6 +570,18 @@ video {
 
 .mb-0\.5 {
   margin-bottom: 0.125rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mr-8 {
+  margin-right: 2rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
 }
 
 .h-8 {
@@ -599,29 +609,13 @@ video {
   background-color: rgb(2 169 234 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#DFFDFF\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(223 253 255 / var(--tw-bg-opacity));
-}
-
 .bg-\[\#FFFEFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 254 255 / var(--tw-bg-opacity));
 }
 
-.bg-\[\#e7fafc\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(231 250 252 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#f0fafb\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(240 250 251 / var(--tw-bg-opacity));
-}
-
-.bg-\[\#e4e6e7\] {
-  --tw-bg-opacity: 1;
-  background-color: rgb(228 230 231 / var(--tw-bg-opacity));
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-2 {
@@ -642,6 +636,16 @@ video {
   line-height: 2.5rem;
 }
 
+.text-lg {
+  font-size: 1.125rem;
+  line-height: 1.75rem;
+}
+
+.text-sm {
+  font-size: 0.875rem;
+  line-height: 1.25rem;
+}
+
 .text-xs {
   font-size: 0.75rem;
   line-height: 1rem;
@@ -649,6 +653,10 @@ video {
 
 .font-bold {
   font-weight: 700;
+}
+
+.font-medium {
+  font-weight: 500;
 }
 
 .font-semibold {
@@ -660,13 +668,29 @@ video {
   color: rgb(0 3 0 / var(--tw-text-opacity));
 }
 
+.text-\[\#313231\] {
+  --tw-text-opacity: 1;
+  color: rgb(49 50 49 / var(--tw-text-opacity));
+}
+
 .text-\[\#FFFEFF\] {
   --tw-text-opacity: 1;
   color: rgb(255 254 255 / var(--tw-text-opacity));
 }
 
+.text-black {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#000000\] {
+  --tw-text-opacity: 1;
+  color: rgb(0 0 0 / var(--tw-text-opacity));
+}
+
 body{
   font-family:Arial, Helvetica, sans-serif;
+  background-color: rgb(227, 232, 239);
 }
 
 .main-container{
@@ -689,10 +713,6 @@ body{
 
 .header{
   grid-area: header;
-}
-
-.main-content{
-  grid-area: main-content;
 }
 
 /* <-------------- sidebar styles --------------> */
@@ -757,6 +777,7 @@ li:hover{
   display: flex;
   justify-content: space-between;
   grid-column: 1 / 3;
+  margin-right: 2rem;
 }
 
 .hello-container > div{
@@ -766,4 +787,122 @@ li:hover{
 .username{
   display: flex;
   flex-direction: column;
+}
+
+.header-buttons > button{
+  background-color: #FFFEFF;
+  color: #02A9EA;
+  margin: 10px;
+  padding: 5px 15px;
+  border-radius: 15px;
+  box-shadow: 2px 2px 2px #4d4c4c;
+}
+
+/* <-------------- Main body styles --------------> */
+
+.content-container{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 0.5rem;
+  margin-bottom: 10px;
+  grid-area:  
+    'projects'
+    'side-content'
+    'title-1'
+    'title-2';
+  grid-template-areas: 
+    'title-1 title-2'
+    'projects side-content'
+    'projects side-content'
+    'projects side-content';
+  color: #000300;
+}
+
+/* makes announcements and trending responsive */
+
+@media (max-width: 60em){
+  .content-container{
+    grid-template-columns: 1fr;
+    grid-template-areas:
+        'title-2'
+        'side-content'
+        'title-1'
+        'projects';
+  }
+}
+
+.title-1{
+  grid-area: title-1;
+}
+
+.title-2{
+  grid-area: title-2;
+}
+
+.title-3{
+  grid-area: title-3;
+  margin-top: 25px;
+}
+
+.main-content{
+  grid-area: main-content;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-auto-rows: auto;
+  grid-area: projects;
+  gap: 2rem;
+}
+
+div .announcements{
+  grid-area: announcements;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #7f7d7d;
+}
+
+.trending{
+  padding: 1rem;
+  margin-top: 10px;
+}
+
+div .trending{
+  grid-area: trending;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #7f7d7d;
+}
+
+.project{
+  background-color: #FFFEFF;
+  padding: 1rem 0.5rem;
+  border-radius: 0.5rem;
+  box-shadow: 2px 2px 5px #7f7d7d;
+  border-left: 10px solid #fde047;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+h3 {
+  font-size:medium;
+  font-weight: 500;
+}
+
+.project > p{
+  font-size: small;
+  margin-top: 0;
+  color: #313231;
+}
+
+.project > .icons{
+  margin-top: 2rem;
+  margin-bottom: 0;
+  align-self: end;
+}
+
+.title-1,
+.title-2{
+  margin-bottom: 0;
+}
+
+.trending-profile{
+  display: flex;
 }
