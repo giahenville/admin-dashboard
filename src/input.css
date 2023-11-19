@@ -119,7 +119,7 @@ li:hover{
 .content-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
-    gap: 1rem;
+    gap: 0.5rem;
     grid-area:  
     'projects'
     'side-content'
@@ -131,11 +131,12 @@ li:hover{
     'projects side-content'
     'projects side-content'
     'projects side-content';
+
+    color: #000300;
 }
 
 .title-1{
-    grid-area: title-1;
-    
+    grid-area: title-1;  
 }
 
 .title-2{
@@ -165,12 +166,34 @@ li:hover{
 
 .project{
     background-color: #FFFEFF;
-    padding: 2rem 1rem;
+    padding: 1rem 0.5rem; 
     border-radius: 0.5rem;
     box-shadow: 2px 2px 5px #7f7d7d;
+    border-left: 10px solid #fde047;
 
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: center;
+    
 }
 
+h3{
+    font-size:medium;
+    font-weight: 500;
+}
+
+.project > p{
+    font-size: small;
+    margin-top: 0;
+}
+
+.project > .icons{
+    margin-top: 2rem;
+    margin-bottom: 0;
+    align-self: end;
+}
+
+.title-1,
+.title-2{
+    margin-bottom: 0;
+}
