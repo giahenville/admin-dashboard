@@ -164,7 +164,7 @@ li:hover{
     grid-area: main-content;
     display: grid;
     grid-template-columns: 1fr 1fr;
-    grid-auto-rows: auto;
+    grid-template-rows: 1fr 1fr 1fr;
     grid-area: projects;
     gap: 2rem;
 }
