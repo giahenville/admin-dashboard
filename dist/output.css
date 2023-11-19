@@ -534,14 +534,44 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.mx-2 {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+}
+
+.mx-3 {
+  margin-left: 0.75rem;
+  margin-right: 0.75rem;
+}
+
 .mx-5 {
   margin-left: 1.25rem;
   margin-right: 1.25rem;
 }
 
-.my-6 {
-  margin-top: 1.5rem;
-  margin-bottom: 1.5rem;
+.my-2 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+
+.mr-4 {
+  margin-right: 1rem;
+}
+
+.mt-10 {
+  margin-top: 2.5rem;
+}
+
+.mb-1 {
+  margin-bottom: 0.25rem;
+}
+
+.mb-0 {
+  margin-bottom: 0px;
+}
+
+.mb-0\.5 {
+  margin-bottom: 0.125rem;
 }
 
 .h-8 {
@@ -579,6 +609,25 @@ video {
   background-color: rgb(255 254 255 / var(--tw-bg-opacity));
 }
 
+.bg-\[\#e7fafc\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(231 250 252 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#f0fafb\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(240 250 251 / var(--tw-bg-opacity));
+}
+
+.bg-\[\#e4e6e7\] {
+  --tw-bg-opacity: 1;
+  background-color: rgb(228 230 231 / var(--tw-bg-opacity));
+}
+
+.p-2 {
+  padding: 0.5rem;
+}
+
 .pr-10 {
   padding-right: 2.5rem;
 }
@@ -593,13 +642,27 @@ video {
   line-height: 2.5rem;
 }
 
+.text-xs {
+  font-size: 0.75rem;
+  line-height: 1rem;
+}
+
 .font-bold {
   font-weight: 700;
+}
+
+.font-semibold {
+  font-weight: 600;
 }
 
 .text-\[\#000300\] {
   --tw-text-opacity: 1;
   color: rgb(0 3 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#FFFEFF\] {
+  --tw-text-opacity: 1;
+  color: rgb(255 254 255 / var(--tw-text-opacity));
 }
 
 body{
@@ -616,9 +679,8 @@ body{
     'sidebar header'
     'sidebar main-content';
   grid-template-columns: 1fr 4fr;
-  grid-template-rows: 1fr 4fr;
+  grid-template-rows: 1fr 3fr;
   height: 100vh;
-  /* 100% of the viewport height */
 }
 
 .sidebar{
@@ -665,6 +727,10 @@ li:hover{
 
 /* <-------------- header styles --------------> */
 
+.header{
+  box-shadow:  0 10px 10px -10px #000000;
+}
+
 .search-container{
   display: grid;
   grid-template-columns: auto 500px;
@@ -672,11 +738,32 @@ li:hover{
 
 .search-bar{
   display: flex;
-  flex: 1;
+  align-items: center;
 }
 
 .profile-pic{
   display: flex;
   justify-self: flex-end;
+  align-items: center;
 }
 
+.hover-effect:hover{
+  transition: 0.4s;
+  transform: scale(1.08);
+  cursor: pointer;
+}
+
+.hello-container{
+  display: flex;
+  justify-content: space-between;
+  grid-column: 1 / 3;
+}
+
+.hello-container > div{
+  display: flex;
+}
+
+.username{
+  display: flex;
+  flex-direction: column;
+}
