@@ -563,6 +563,10 @@ video {
   color: rgb(255 255 255 / var(--tw-text-opacity));
 }
 
+body{
+  font-family:Arial, Helvetica, sans-serif;
+}
+
 .main-container{
   display: grid;
   grid-area: 
@@ -579,13 +583,6 @@ video {
   grid-area: sidebar;
 }
 
-.side-content{
-  margin-left: 3rem;
-  margin-top: 2rem;
-  display: grid;
-  gap: 20px;
-}
-
 .header{
   grid-area: header;
 }
@@ -593,6 +590,33 @@ video {
 .main-content{
   grid-area: main-content;
 }
+
+/* <-------------- sidebar styles --------------> */
+
+.sidebar .side-content{
+  margin-left: 3rem;
+  margin-top: 2rem;
+  display: grid;
+  align-items: center;
+  gap: 20px;
+}
+
+.side-one,
+.side-two{
+  display: grid;
+  gap: 20px;
+  margin-top: 40px;
+}
+
+/* Center the icons vertically using flexbox */
+
+.side-one li,
+.side-two li {
+  display: flex;
+  align-items: center;
+}
+
+
 
 
 
