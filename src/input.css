@@ -118,7 +118,7 @@ li:hover{
 
 .content-container{
     display: grid;
-    grid-template-columns: 3fr 1fr;
+    grid-template-columns: 2fr 1fr;
     gap: 0.5rem;
     grid-area:  
     'projects'
@@ -167,12 +167,18 @@ li:hover{
     gap: 2rem;
 }
 
-.announcements{
+
+div .announcements{
     grid-area: announcements;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px #7f7d7d;
 }
 
-.trending{
+div .trending{
     grid-area: trending;
+    border-radius: 1rem;
+    box-shadow: 2px 2px 5px #7f7d7d;
+
 }
 
 .project{
@@ -188,7 +194,7 @@ li:hover{
     
 }
 
-h3{
+h3 {
     font-size:medium;
     font-weight: 500;
 }
@@ -196,6 +202,7 @@ h3{
 .project > p{
     font-size: small;
     margin-top: 0;
+    color: #313231;
 }
 
 .project > .icons{

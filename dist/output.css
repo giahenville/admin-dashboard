@@ -576,6 +576,10 @@ video {
   margin-right: 1rem;
 }
 
+.mr-8 {
+  margin-right: 2rem;
+}
+
 .mt-10 {
   margin-top: 2.5rem;
 }
@@ -608,6 +612,10 @@ video {
 .bg-\[\#FFFEFF\] {
   --tw-bg-opacity: 1;
   background-color: rgb(255 254 255 / var(--tw-bg-opacity));
+}
+
+.p-10 {
+  padding: 2.5rem;
 }
 
 .p-2 {
@@ -658,6 +666,11 @@ video {
 .text-\[\#000300\] {
   --tw-text-opacity: 1;
   color: rgb(0 3 0 / var(--tw-text-opacity));
+}
+
+.text-\[\#313231\] {
+  --tw-text-opacity: 1;
+  color: rgb(49 50 49 / var(--tw-text-opacity));
 }
 
 .text-\[\#FFFEFF\] {
@@ -779,7 +792,7 @@ li:hover{
 
 .content-container{
   display: grid;
-  grid-template-columns: 3fr 1fr;
+  grid-template-columns: 2fr 1fr;
   gap: 0.5rem;
   grid-area:  
     'projects'
@@ -826,12 +839,16 @@ li:hover{
   gap: 2rem;
 }
 
-.announcements{
+div .announcements{
   grid-area: announcements;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #7f7d7d;
 }
 
-.trending{
+div .trending{
   grid-area: trending;
+  border-radius: 1rem;
+  box-shadow: 2px 2px 5px #7f7d7d;
 }
 
 .project{
@@ -845,7 +862,7 @@ li:hover{
   justify-content: center;
 }
 
-h3{
+h3 {
   font-size:medium;
   font-weight: 500;
 }
@@ -853,6 +870,7 @@ h3{
 .project > p{
   font-size: small;
   margin-top: 0;
+  color: #313231;
 }
 
 .project > .icons{
