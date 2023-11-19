@@ -16,6 +16,7 @@ body{
     'sidebar header'
     'sidebar main-content';
     grid-template-columns: 1fr 4fr;
+    grid-template-rows: 100vh; /* 100% of the viewport height */
 }
 
 .sidebar{
@@ -55,6 +56,11 @@ body{
     align-items: center;
 }
 
+li:hover{
+    transition: 0.4s;
+    transform: scale(1.08);
+    cursor: pointer;
+}
 
 
 
