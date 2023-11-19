@@ -640,7 +640,6 @@ body{
   margin-top: 2rem;
   display: grid;
   align-items: center;
-  gap: 20px;
 }
 
 .side-one,
@@ -664,6 +663,20 @@ li:hover{
   cursor: pointer;
 }
 
+/* <-------------- header styles --------------> */
 
+.search-container{
+  display: grid;
+  grid-template-columns: auto 500px;
+}
 
+.search-bar{
+  display: flex;
+  flex: 1;
+}
+
+.profile-pic{
+  display: flex;
+  justify-self: flex-end;
+}
 
