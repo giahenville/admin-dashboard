@@ -4,6 +4,7 @@
 
 body{
     font-family:Arial, Helvetica, sans-serif;
+    background-color: rgb(227, 232, 239);
 }
 
 .main-container{
@@ -118,21 +119,40 @@ li:hover{
 .content-container{
     display: grid;
     grid-template-columns: 3fr 1fr;
+    gap: 1rem;
     grid-area:  
     'projects'
-    'announcements'
-    'trending';
+    'side-content'
+    'title-1'
+    'title-2';
 
-    grid-template-areas:  
-    'projects announcements'
-    'projects trending';
+    grid-template-areas: 
+    'title-1 title-2'
+    'projects side-content'
+    'projects side-content'
+    'projects side-content';
+}
+
+.title-1{
+    grid-area: title-1;
+    
+}
+
+.title-2{
+    grid-area: title-2;
+}
+
+.title-3{
+    grid-area: title-3;
 }
 
 .main-content{
     grid-area: main-content;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    grid-auto-rows: auto;
     grid-area: projects;
+    gap: 2rem;
 }
 
 .announcements{
@@ -142,3 +162,15 @@ li:hover{
 .trending{
     grid-area: trending;
 }
+
+.project{
+    background-color: #FFFEFF;
+    padding: 2rem 1rem;
+    border-radius: 0.5rem;
+    box-shadow: 2px 2px 5px #7f7d7d;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
