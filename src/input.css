@@ -16,7 +16,8 @@ body{
     'sidebar header'
     'sidebar main-content';
     grid-template-columns: 1fr 4fr;
-    grid-template-rows: 100vh; /* 100% of the viewport height */
+    grid-template-rows: 1fr 4fr;
+    height: 100vh; /* 100% of the viewport height */
 }
 
 .sidebar{
