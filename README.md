@@ -6,7 +6,7 @@ This is my implementation of the admin dashboard project for The Odin Project. T
 
 This is a design that I made to practice my CSS Grid skills. This dashboard displays the user's projects, includes a sidebar for naviagation, and an announcements/trending section.
 
-<img src="./img/admin-photo.png" alt="demo image for admin dashboard" width="300px">
+<img src="./img/admin-photo.png" alt="demo image for admin dashboard" width="600px">
 
 ## Skills I learned:
 
